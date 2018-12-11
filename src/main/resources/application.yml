@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    username: timlafleur
+    password: t3m26l93
+    url: jdbc:postgresql://timlafleur-project0.cle4swqnvhve.us-east-2.rds.amazonaws.com:5432/project2
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+    show-sql: true
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+    hibernate:
+      ddl-auto: update
